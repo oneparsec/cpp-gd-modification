@@ -1,2 +1,2 @@
-# cpp-gd-extension
-Template for C++-based GD extension
+# cpp-gd-modification
+Template for C++-based GD mod

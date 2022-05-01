@@ -8,8 +8,7 @@ using namespace cocos2d;
 
 void (__thiscall* MenuLayer_onMoreGames)(MenuLayer*, CCObject*);
 void __fastcall MenuLayer_onMoreGames_H(MenuLayer* self, void*, CCObject* sender) {
-    MenuLayer_onMoreGames(self, sender);
-    MessageBoxA(NULL, "MenuLayer_onMoreGames has been called", "info", MB_ICONINFORMATION);
+    gd::FLAlertLayer::create(nullptr, "Info", "Ok", nullptr, "MenuLayer_onMoreGames has been called")->show();
 }
 DWORD WINAPI MainThread(void* hModule)
 {
